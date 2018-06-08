@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.SettingsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            android:elevation="6dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:text="User Info"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:text="Name"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:text=":"
+                    android:textColor="#555555"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/nameText"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:text="ID"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:text=":"
+                    android:textColor="#555555"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/idText"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:text="Email"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:text=":"
+                    android:textColor="#555555"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/emailText"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:text="Gender"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:text=":"
+                    android:textColor="#555555"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1.9"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/maleGender"
+                        android:layout_width="wrap_content"
+                        android:text="Male"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/femaleGender"
+                        android:layout_width="wrap_content"
+                        android:text="Female"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:text="Comments"
+                    android:textColor="#696969"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:text=":"
+                    android:textColor="#555555"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/commentsText"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                android:layout_width="0dp"
+                android:background="@color/colorPrimary"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

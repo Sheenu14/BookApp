@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    tools:context=".ui.ui.AddViewDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetEnd="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetStart="0dp"
+            android:elevation="6dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:text="Add Info"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:hint="Title"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/rounded_corner_edit"
+                        android:layout_height="50dp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/tripTypeText"
+                        android:layout_width="match_parent"
+                        android:hint="Trip Type"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:focusable="false"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_corner_edit"
+                        android:layout_height="50dp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/destinationText"
+                        android:layout_width="match_parent"
+                        android:hint="Destination"
+                        android:paddingLeft="10dp"
+                        android:focusable="false"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_corner_edit"
+                        android:layout_height="50dp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/durationText"
+                        android:layout_width="match_parent"
+                        android:hint="Duration"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_corner_edit"
+                        android:layout_height="50dp" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/latitudeText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="GPS Latitude"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/rounded_corner_edit"
+                            android:layout_height="50dp" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/longitudeText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="GPS Longitude"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/rounded_corner_edit"
+                            android:layout_height="50dp" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/picUpload"
+                            android:layout_width="125dp"
+                            android:src="@drawable/profile_icon"
+                            android:layout_height="125dp" />
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/dateText"
+                                    android:layout_width="match_parent"
+                                    android:hint="Date"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:focusable="false"
+                                    android:layout_marginTop="0dp"
+                                    android:background="@drawable/rounded_corner_edit"
+                                    android:layout_height="45dp" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/commentsText"
+                                    android:layout_width="match_parent"
+                                    android:hint="Comments"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/rounded_corner_edit"
+                                    android:layout_height="75dp" />
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_height="50dp">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/deleteBtn"
+                            android:layout_width="0dp"
+                            android:background="@color/colorPrimary"
+                            android:text="delete"
+                            android:textColor="#ffffff"
+                            android:textAllCaps="true"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/mapBtn"
+                            android:layout_width="0dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Map"
+                            android:textColor="#ffffff"
+                            android:textAllCaps="true"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_height="50dp">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/cancelBtn"
+                            android:layout_width="0dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Cancel"
+                            android:textColor="#ffffff"
+                            android:textAllCaps="true"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/saveBtn"
+                            android:layout_width="0dp"
+                            android:background="@color/colorPrimary"
+                            android:text="Save"
+                            android:textColor="#ffffff"
+                            android:textAllCaps="true"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>
